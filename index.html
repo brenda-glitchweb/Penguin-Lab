@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>My project</title>
+</head>
+<body class="home-page">
+
+ <nav class="navbar">
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+  <div class="menu-links" id="menuLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  
+  <header>
+    <h1>Welcome to Penguin Lab</h1>
+    <p>A little space to interact,explore and discover new idea's</p>
+  </header>
+  
+  <main class="register-card">
+    <h1>Register Now</h1>
+     <form>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Why do you want to join?</label>
+
+        <select id="reason" name="reason">
+          <option value="">Select an option</option>
+          <option value="learning">Learning</option>
+          <option value="exploring">Just exploring</option>
+          <option value="curiosity">Curiosity</option>
+          <option value="looking-around">Just looking around</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+       
+      <label class="terms-check">
+  <input type="checkbox" required>
+  I have read and agree to the
+  <a href="terms.html">Terms & Conditions</a>
+</label>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </main>
+  <div class="hole"></div>
+  <div class="penguin">
+
+  <div class="body">
+    <div class="tummy"></div>
+  </div>
+
+  <div class="wing left"></div>
+  <div class="wing right"></div>
+
+  <div class="head">
+    <div class="face">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="beak"></div>
+    </div>
+  </div>
+
+  <div class="foot left"></div>
+  <div class="foot right"></div>
+
+</div>
+  <footer>
+  <p>Penguin Lab</p>
+
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <small>© 2026 Penguin Lab</small>
+</footer>
+  <script>
+  setTimeout(() => {
+    document.body.classList.remove("home-page");
+  }, 11000);
+</script>
+  <script>
+  function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("show");
+  }
+</script>
+</body>
+</html>
