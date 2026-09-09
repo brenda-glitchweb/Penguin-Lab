@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Penguin Lab</title>
+</head>
+
+<body class="home-page">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <button class="menu-button" id="menuButton">
+      ☰
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- INTRO HEADER -->
+  <header>
+
+    <h1>Welcome to Penguin Lab</h1>
+
+    <p>
+      A little space to interact, explore and discover new ideas.
+    </p>
+
+  </header>
+
+
+  <!-- REGISTRATION CARD -->
+  <main class="register-card">
+
+    <h1>Register Now</h1>
+
+    <form id="registrationForm">
+
+      <!-- NAME -->
+      <div class="form-group">
+
+        <label for="name">
+          Name
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          minlength="4"
+          required
+        >
+
+      </div>
+
+
+      <!-- EMAIL -->
+      <div class="form-group">
+
+        <label for="email">
+          Email
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your Gmail"
+          pattern="[a-zA-Z0-9._%+-]+@gmail\.com"
+          title="Please enter a valid Gmail address"
+          required
+        >
+
+      </div>
+
+
+      <!-- REASON -->
+      <div class="form-group">
+
+        <label for="reason">
+          Why do you want to join?
+        </label>
+
+        <select id="reason" name="reason">
+
+          <option value="">
+            Select an option
+          </option>
+
+          <option value="learning">
+            Learning
+          </option>
+
+          <option value="exploring">
+            Just exploring
+          </option>
+
+          <option value="curiosity">
+            Curiosity
+          </option>
+
+          <option value="looking-around">
+            Just looking around
+          </option>
+
+          <option value="other">
+            Other
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- TERMS -->
+      <label class="terms-check">
+
+        <input type="checkbox" required>
+
+        I have read and agree to the
+        <a href="terms.html">
+          Terms &amp; Conditions
+        </a>
+
+      </label>
+
+
+      <!-- SUBMIT -->
+      <button type="submit">
+        Submit
+      </button>
+
+    </form>
+
+  </main>
+
+
+  <!-- ENTRY SCREEN -->
+  <section class="entry-screen" id="entryScreen">
+
+    <div class="entry-message">
+
+      <h2>
+        You made it in. 👀
+      </h2>
+
+      <p>
+        Getting things ready...
+      </p>
+
+      <div class="loading-dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LAB SCREEN -->
+  <section class="lab-screen" id="labScreen">
+
+<div class="penguin-bubble bubble-one">
+  👀 There's more to discover...
+</div>
+
+<div class="penguin-bubble bubble-two">
+  🐧 Keep looking...
+</div>
+
+<div class="penguin-bubble bubble-three">
+  💭 You never know what you'll find.
+</div>
+
+<div class="penguin-bubble bubble-four">
+  🔎 Did you notice that?
+</div>
+
+<div class="penguin-bubble bubble-five">
+  🌍 The world is stranger than it looks.
+</div>
+
+<div class="penguin-bubble bubble-six">
+  🤔 I wonder what we'll find next.
+</div>
+
+<div class="penguin-bubble bubble-seven">
+  🐧 Don't scroll too fast!
+</div>
+
+<div class="penguin-bubble bubble-eight">
+  👀 Okay... this one is interesting.
+</div>
+    
+    <div class="lab-content">
+
+
+      <!-- LAB PENGUIN -->
+      <div class="lab-penguin">
+
+        <div class="lab-penguin-body">
+
+          <div class="lab-penguin-tummy"></div>
+
+        </div>
+
+
+        <div class="lab-penguin-wing"></div>
+
+
+        <div class="lab-penguin-head">
+
+          <div class="lab-penguin-face">
+
+            <div class="lab-penguin-eye left"></div>
+
+            <div class="lab-penguin-eye right"></div>
+
+            <div class="lab-penguin-beak"></div>
+
+          </div>
+
+        </div>
+
+
+        <div class="lab-penguin-foot left"></div>
+
+        <div class="lab-penguin-foot right"></div>
+
+
+        <!-- PENGUIN MESSAGE -->
+        <div class="penguin-message">
+
+          <span>
+            Come take a look... 👀
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- LAB INTRO -->
+      <h1>
+        Welcome to Penguin Lab
+      </h1>
+
+
+      <p>
+        There’s more to the world than we notice at first glance.
+        Some things are strange. Some are disappearing.
+        Some are hiding in plain sight.
+      </p>
+
+
+      <p>
+        Take a look around. You might discover something
+        you never knew existed.
+      </p>
+
+
+      <!-- SLIDER TITLE -->
+      <h2>
+        A glimpse inside the Lab...
+      </h2>
+
+
+      <!-- IMAGE SLIDER -->
+      <div class="lab-slider">
+
+        <div class="slides-track">
+
+
+          <!-- IMAGE 1 -->
+          <div class="slide">
+
+            <img
+              src="images/image1.jpg"
+              alt="A glimpse into the natural world"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 2 -->
+          <div class="slide">
+
+            <img
+              src="images/image2.jpg"
+              alt="A glimpse into the natural world"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 3 -->
+          <div class="slide">
+
+            <img
+              src="images/image3.jpg"
+              alt="A glimpse into language and culture"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 4 -->
+          <div class="slide">
+
+            <img
+              src="images/image4.jpg"
+              alt="Antikythera mechanism"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 5 -->
+          <div class="slide">
+
+            <img
+              src="images/image5.jpg"
+              alt="A glimpse inside Penguin Lab"
+            >
+
+          </div>
+
+
+          <!-- DUPLICATE IMAGE 1 FOR SEAMLESS SLIDER -->
+          <div class="slide">
+
+            <img
+              src="images/image1.jpg"
+              alt="A glimpse into the natural world"
+            >
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- DISCOVERY SECTION -->
+      <section class="discover-section">
+
+
+        <h2>
+          What will you discover?
+        </h2>
+
+
+        <p class="discover-intro">
+          The world is full of things that are easy to overlook.
+          Look a little closer and you might find something extraordinary.
+        </p>
+
+
+  <div class="discovery-categories">
+
+
+          <!-- NATURE -->
+   <div class="discovery-card">
+
+    <img src="images/image1.jpg"
+             alt="A mysterious cave"
+            >
+
+
+            <div class="discovery-info">
+
+              <h3>
+                Nature
+              </h3>
+
+
+              <p class="discovery-tagline">
+                The world has secrets.
+              </p>
+
+
+              <p>
+                Strange creatures, hidden places, unusual ecosystems,
+                and natural phenomena that seem almost impossible.
+              </p>
+
+
+        <button onclick="window.location.href='nature.html'">
+  Explore Nature
+</button>
+
+            </div>
+
+          </div>
+
+
+          <!-- LANGUAGES -->
+          <div class="discovery-card">
+
+            <img
+              src="images/image5.jpg"
+              alt="Language and culture"
+            >
+
+
+            <div class="discovery-info">
+
+              <h3>
+                Languages
+              </h3>
+
+
+              <p class="discovery-tagline">
+                Every language carries a world.
+              </p>
+
+
+              <p>
+                Discover disappearing languages, unusual writing systems,
+                fascinating words, and the stories languages carry.
+              </p>
+
+
+    <button onclick="window.location.href='languages.html'">
+  Explore Languages
+</button>
+
+            </div>
+
+          </div>
+
+
+          <!-- MYSTERIES & INVENTIONS -->
+          <div class="discovery-card">
+
+            <img
+              src="images/image2.jpg"
+              alt="The Antikythera mechanism"
+            >
+
+
+            <div class="discovery-info">
+
+              <h3>
+                Mysteries &amp; Inventions
+              </h3>
+
+
+              <p class="discovery-tagline">
+                Someone actually built this.
+              </p>
+
+
+              <p>
+                Explore ancient technology, forgotten inventions,
+                mysterious objects, and discoveries that raise questions.
+              </p>
+
+
+  <button onclick="window.location.href='mysteries.html'">
+  Explore Mysteries
+</button>
+
+            </div>
+
+          </div>
+    <div class="discovery-card">
+  <img src="images/image3.jpg" alt="A hidden place">
+
+  <div class="discovery-info">
+    <h3>Hidden Places</h3>
+
+    <p class="discovery-tagline">
+      Some places are easier to miss than you think.
+    </p>
+
+    <p>
+      Explore forgotten places, secret corners of the world,
+      unusual landscapes, and locations hiding in plain sight.
+    </p>
+
+    <button onclick="window.location.href='hidden.html'">
+      Explore Hidden Places
+    </button>
+  </div>
+</div>
+
+
+<div class="discovery-card">
+  <img src="images/image4.jpg" alt="The human mind">
+
+  <div class="discovery-info">
+    <h3>Human Mind</h3>
+
+    <p class="discovery-tagline">
+      Your mind does more than you realize.
+    </p>
+
+    <p>
+      Discover fascinating things about memory, perception,
+      emotions, habits, and the strange ways our minds work.
+    </p>
+
+    <button onclick="window.location.href='mind.html'">
+      Explore Human Mind
+    </button>
+  </div>
+</div>  
+
+        </div>
+
+      </section>
+
+      <section class="why-lab">
+
+  <h2>Why Penguin Lab?</h2>
+
+  <p>
+    Penguin Lab is a little space for curious minds.
+    A place to pause, look closer, and discover things
+    that are easy to miss in everyday life.
+  </p>
+
+  <p>
+    From hidden corners of nature to languages that are
+    slowly disappearing and inventions that make us wonder,
+    there's always something worth exploring.
+  </p>
+
+  <p>
+    You don't need to know everything.
+    Just be curious enough to look.
+  </p>
+
+</section>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO PENGUIN -->
+  <div class="hole"></div>
+
+
+  <div class="penguin">
+
+    <div class="body">
+
+      <div class="tummy"></div>
+
+    </div>
+
+
+    <div class="wing left"></div>
+
+    <div class="wing right"></div>
+
+
+    <div class="head">
+
+      <div class="face">
+
+        <div class="eye left"></div>
+
+        <div class="eye right"></div>
+
+        <div class="beak"></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="foot left"></div>
+
+    <div class="foot right"></div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      Penguin Lab
+    </p>
+
+
+    <div class="footer-links">
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="terms.html">
+        Terms &amp; Conditions
+      </a>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+    </div>
+
+
+    <small>
+      © 2026 Penguin Lab
+    </small>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
